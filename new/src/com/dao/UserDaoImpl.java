@@ -1,9 +1,7 @@
 package com.dao;
 
 
-import com.dao.DBconn;
-import com.dao.UserDao;
-import com.entity.User;
+import com.bean.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

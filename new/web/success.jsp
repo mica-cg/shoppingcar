@@ -20,5 +20,6 @@
 ${xiaoxi} <br>
 <a href="searchall_b">进入购物车</a>
 <a href="Searchall">管理员入口</a>
+<a href="Searchall_c">购物页面</a>
 </body>
 </html>

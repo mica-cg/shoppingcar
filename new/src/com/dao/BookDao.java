@@ -1,8 +1,7 @@
 package com.dao;
 
-import com.entity.Book;
+import com.bean.Book;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public interface BookDao {
@@ -12,4 +11,5 @@ public interface BookDao {
     Integer select_T();//查找总的本书
     Integer select_TP();//查找总价格
     boolean delete(int bid);
+    List<Book> getBookAll(String bname);//根据名字查询图书信息
 }

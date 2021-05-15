@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import com.dao.UserDao;
 import com.dao.UserDaoImpl;
-import com.entity.User;
+import com.bean.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;

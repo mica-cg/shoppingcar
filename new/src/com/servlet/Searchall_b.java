@@ -2,7 +2,7 @@ package com.servlet;
 
 import com.dao.BookDao;
 import com.dao.BookDaolmpl;
-import com.entity.Book;
+import com.bean.Book;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.io.IOException;

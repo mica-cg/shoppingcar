@@ -78,7 +78,7 @@
     <tr class="trclass">
         <td class="tdone xuhao"><input type="hidden"name="bid" value="${b.bid}">${b.bid}</td>
         <td class="tdtwo">${b.bname}</td>
-        <td class="tdthree"><span class="jiajie"><input type="text" name="x"><input type="submit" value="添加"></span></td>
+        <td class="tdthree"><span class="jiajie"><input type="text" name="x" value="1" hidden><input type="submit" value="+1"></span></td>
         <td class="tdfour"><span>单价:￥</span><span class="unit">${b.price}</span></td>
         <td class="tdfive"><span class="subtal">${b.num}</span></td>
         </form>
@@ -87,9 +87,13 @@
         </form>
     </tr>
 
+
     </C:forEach>
 
-    <tr><td colspan="6"; class="talast"><span >商品一共 </span><input type="hidden" name="y"> ${sessionScope.a}件; 共计花费 <span class="pricetal">￥${sessionScope.b}</span></span><br> <a href="clearServlet">清空购物车</a></td></tr>
+    <tr><td colspan="6"; class="talast"><span >商品一共 </span><input type="hidden" name="y"> ${sessionScope.a}件; 共计花费 <span class="pricetal">￥${sessionScope.b}</span>
+        <br> <a href="clearServlet">清空购物车</a>
+        <a href="Searchall_c">返回商店</a>
+    </td></tr>
 
     </tbody>
 </table>

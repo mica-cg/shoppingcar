@@ -1,14 +1,17 @@
 package com.servlet;
 
+import com.bean.Book;
 import com.dao.BookDao;
 import com.dao.BookDaolmpl;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-import javax.swing.*;
+import jakarta.servlet.annotation.*;
+
 import java.io.IOException;
+import java.util.List;
 
 
-public class addbookServlet extends HttpServlet {
+public class Searchall_c extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
@@ -16,15 +19,9 @@ public class addbookServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String x=request.getParameter("x");
-        int num=Integer.parseInt(x);
-        BookDao bd=new BookDaolmpl();
-        String y=request.getParameter("bid");
-        int bid=Integer.parseInt(y);
-        if(bd.add(bid,num)){
-            request.getRequestDispatcher("/searchall_b").forward(request, response);
-        }else{
-            response.sendRedirect("index.jsp");
-        }
+        BookDao ud = new BookDaolmpl();
+        List<Book> bookAll = ud.getBookAll();
+        request.setAttribute("bookAll", bookAll);
+        request.getRequestDispatcher("/shop.jsp").forward(request, response);
     }
 }

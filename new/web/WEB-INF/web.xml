@@ -36,7 +36,14 @@
         <servlet-name>clearServlett</servlet-name>
         <servlet-class>com.servlet.clearServlet</servlet-class>
     </servlet>
-
+    <servlet>
+        <servlet-name>Searchall_c</servlet-name>
+        <servlet-class>com.servlet.Searchall_c</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Searchall_d</servlet-name>
+        <servlet-class>com.servlet.Searchall_d</servlet-class>
+    </servlet>
 
 
 
@@ -72,7 +79,14 @@
         <servlet-name>clearServlett</servlet-name>
         <url-pattern>/clearServlet</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>Searchall_c</servlet-name>
+        <url-pattern>/Searchall_c</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Searchall_d</servlet-name>
+        <url-pattern>/Searchall_d</url-pattern>
+    </servlet-mapping>
 
     <welcome-file-list><!--默认首页地址-->
         <welcome-file>denglu.jsp</welcome-file>
